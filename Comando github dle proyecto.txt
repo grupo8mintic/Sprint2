@@ -1,0 +1,233 @@
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ git config --global user.name "grupo8mintic"
+
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ git config --global user.email "grupo8mintic@gmail.com"
+
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ git clone https://github.com/grupo8mintic/Sprint2.git
+Cloning into 'Sprint2'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+JRCCTV@OP19 MINGW64 ~/Desktop/Sprint2 (main)
+$ git add .
+warning: in the working copy of 'cupbop/css/baguetteBox.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/bootstrap.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/classic.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/classic.date.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/classic.time.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/custom.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/font-awesome.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/responsive.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/css/superslides.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/fonts/fontawesome-webfont.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/baguetteBox.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/bootstrap.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/form-validator.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/jquery-3.2.1.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/jquery.superslides.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/legacy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/picker.date.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/picker.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/picker.time.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cupbop/js/popper.min.js', LF will be replaced by CRLF the next time Git touches it
+
+JRCCTV@OP19 MINGW64 ~/Desktop/Sprint2 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   cupbop/contactenos.html
+        new file:   cupbop/css/animate.css
+        new file:   cupbop/css/baguetteBox.min.css
+        new file:   cupbop/css/bootstrap.min.css
+        new file:   cupbop/css/classic.css
+        new file:   cupbop/css/classic.date.css
+        new file:   cupbop/css/classic.time.css
+        new file:   cupbop/css/custom.css
+        new file:   cupbop/css/font-awesome.min.css
+        new file:   cupbop/css/responsive.css
+        new file:   cupbop/css/style.css
+        new file:   cupbop/css/superslides.css
+        new file:   cupbop/fonts/FontAwesome.otf
+        new file:   cupbop/fonts/fontawesome-webfont.eot
+        new file:   cupbop/fonts/fontawesome-webfont.svg
+        new file:   cupbop/fonts/fontawesome-webfont.ttf
+        new file:   cupbop/fonts/fontawesome-webfont.woff
+        new file:   cupbop/fonts/fontawesome-webfont.woff2
+        new file:   cupbop/images/about-bg.jpg
+        new file:   cupbop/images/about-img.jpg
+        new file:   cupbop/images/all-bg.jpg
+        new file:   cupbop/images/avt-img.jpg
+        new file:   cupbop/images/blog-img-01.jpg
+        new file:   cupbop/images/blog-img-02.jpg
+        new file:   cupbop/images/blog-img-03.jpg
+        new file:   cupbop/images/blog-img-04.jpg
+        new file:   cupbop/images/blog-img-05.jpg
+        new file:   cupbop/images/blog-img-06.jpg
+        new file:   cupbop/images/blog-img-07.jpg
+        new file:   cupbop/images/blog-img-08.jpg
+        new file:   cupbop/images/blog-img-09.jpg
+        new file:   cupbop/images/footer-bg.jpg
+        new file:   cupbop/images/gallery-img-01.jpg
+        new file:   cupbop/images/gallery-img-02.jpg
+        new file:   cupbop/images/gallery-img-03.jpg
+        new file:   cupbop/images/gallery-img-04.jpg
+        new file:   cupbop/images/gallery-img-05.jpg
+        new file:   cupbop/images/gallery-img-06.jpg
+        new file:   cupbop/images/img-01.jpg
+        new file:   cupbop/images/img-02.jpg
+        new file:   cupbop/images/img-03.jpg
+        new file:   cupbop/images/img-04.jpg
+        new file:   cupbop/images/img-05.jpg
+        new file:   cupbop/images/img-06.jpg
+        new file:   cupbop/images/img-07.jpg
+        new file:   cupbop/images/img-08.jpg
+        new file:   cupbop/images/img-09.jpg
+        new file:   cupbop/images/inner-blog-img.jpg
+        new file:   cupbop/images/logo.png
+        new file:   cupbop/images/post-img-01.jpg
+        new file:   cupbop/images/post-img-02.jpg
+        new file:   cupbop/images/post-img-03.jpg
+        new file:   cupbop/images/qt-bg.jpg
+        new file:   cupbop/images/qt-bg.webp
+        new file:   cupbop/images/quotations-button.png
+        new file:   cupbop/images/slider-01.jpg
+        new file:   cupbop/images/slider-02.jpg
+        new file:   cupbop/images/slider-03.jpg
+        new file:   cupbop/images/stuff-img-01.jpg
+        new file:   cupbop/images/stuff-img-02.jpg
+        new file:   cupbop/images/stuff-img-03.jpg
+        new file:   cupbop/images/stuff-img-04.jpg
+        new file:   cupbop/images/stuff-img-05.jpg
+        new file:   cupbop/images/stuff-img-06.jpg
+        new file:   cupbop/index.html
+        new file:   cupbop/js/baguetteBox.min.js
+        new file:   cupbop/js/bootstrap.min.js
+        new file:   cupbop/js/contact-form-script.js
+        new file:   cupbop/js/custom.js
+        new file:   cupbop/js/form-validator.min.js
+        new file:   cupbop/js/images-loded.min.js
+        new file:   cupbop/js/isotope.min.js
+        new file:   cupbop/js/jquery-3.2.1.min.js
+        new file:   cupbop/js/jquery.mapify.js
+        new file:   cupbop/js/jquery.superslides.min.js
+        new file:   cupbop/js/legacy.js
+        new file:   cupbop/js/picker.date.js
+        new file:   cupbop/js/picker.js
+        new file:   cupbop/js/picker.time.js
+        new file:   cupbop/js/popper.min.js
+        new file:   cupbop/menu.html
+
+
+JRCCTV@OP19 MINGW64 ~/Desktop/Sprint2 (main)
+$ git commit -m "cupbo version 1"
+[main 057e029] cupbo version 1
+ 81 files changed, 8357 insertions(+)
+ create mode 100644 cupbop/contactenos.html
+ create mode 100644 cupbop/css/animate.css
+ create mode 100644 cupbop/css/baguetteBox.min.css
+ create mode 100644 cupbop/css/bootstrap.min.css
+ create mode 100644 cupbop/css/classic.css
+ create mode 100644 cupbop/css/classic.date.css
+ create mode 100644 cupbop/css/classic.time.css
+ create mode 100644 cupbop/css/custom.css
+ create mode 100644 cupbop/css/font-awesome.min.css
+ create mode 100644 cupbop/css/responsive.css
+ create mode 100644 cupbop/css/style.css
+ create mode 100644 cupbop/css/superslides.css
+ create mode 100644 cupbop/fonts/FontAwesome.otf
+ create mode 100644 cupbop/fonts/fontawesome-webfont.eot
+ create mode 100644 cupbop/fonts/fontawesome-webfont.svg
+ create mode 100644 cupbop/fonts/fontawesome-webfont.ttf
+ create mode 100644 cupbop/fonts/fontawesome-webfont.woff
+ create mode 100644 cupbop/fonts/fontawesome-webfont.woff2
+ create mode 100644 cupbop/images/about-bg.jpg
+ create mode 100644 cupbop/images/about-img.jpg
+ create mode 100644 cupbop/images/all-bg.jpg
+ create mode 100644 cupbop/images/avt-img.jpg
+ create mode 100644 cupbop/images/blog-img-01.jpg
+ create mode 100644 cupbop/images/blog-img-02.jpg
+ create mode 100644 cupbop/images/blog-img-03.jpg
+ create mode 100644 cupbop/images/blog-img-04.jpg
+ create mode 100644 cupbop/images/blog-img-05.jpg
+ create mode 100644 cupbop/images/blog-img-06.jpg
+ create mode 100644 cupbop/images/blog-img-07.jpg
+ create mode 100644 cupbop/images/blog-img-08.jpg
+ create mode 100644 cupbop/images/blog-img-09.jpg
+ create mode 100644 cupbop/images/footer-bg.jpg
+ create mode 100644 cupbop/images/gallery-img-01.jpg
+ create mode 100644 cupbop/images/gallery-img-02.jpg
+ create mode 100644 cupbop/images/gallery-img-03.jpg
+ create mode 100644 cupbop/images/gallery-img-04.jpg
+ create mode 100644 cupbop/images/gallery-img-05.jpg
+ create mode 100644 cupbop/images/gallery-img-06.jpg
+ create mode 100644 cupbop/images/img-01.jpg
+ create mode 100644 cupbop/images/img-02.jpg
+ create mode 100644 cupbop/images/img-03.jpg
+ create mode 100644 cupbop/images/img-04.jpg
+ create mode 100644 cupbop/images/img-05.jpg
+ create mode 100644 cupbop/images/img-06.jpg
+ create mode 100644 cupbop/images/img-07.jpg
+ create mode 100644 cupbop/images/img-08.jpg
+ create mode 100644 cupbop/images/img-09.jpg
+ create mode 100644 cupbop/images/inner-blog-img.jpg
+ create mode 100644 cupbop/images/logo.png
+ create mode 100644 cupbop/images/post-img-01.jpg
+ create mode 100644 cupbop/images/post-img-02.jpg
+ create mode 100644 cupbop/images/post-img-03.jpg
+ create mode 100644 cupbop/images/qt-bg.jpg
+ create mode 100644 cupbop/images/qt-bg.webp
+ create mode 100644 cupbop/images/quotations-button.png
+ create mode 100644 cupbop/images/slider-01.jpg
+ create mode 100644 cupbop/images/slider-02.jpg
+ create mode 100644 cupbop/images/slider-03.jpg
+ create mode 100644 cupbop/images/stuff-img-01.jpg
+ create mode 100644 cupbop/images/stuff-img-02.jpg
+ create mode 100644 cupbop/images/stuff-img-03.jpg
+ create mode 100644 cupbop/images/stuff-img-04.jpg
+ create mode 100644 cupbop/images/stuff-img-05.jpg
+ create mode 100644 cupbop/images/stuff-img-06.jpg
+ create mode 100644 cupbop/index.html
+ create mode 100644 cupbop/js/baguetteBox.min.js
+ create mode 100644 cupbop/js/bootstrap.min.js
+ create mode 100644 cupbop/js/contact-form-script.js
+ create mode 100644 cupbop/js/custom.js
+ create mode 100644 cupbop/js/form-validator.min.js
+ create mode 100644 cupbop/js/images-loded.min.js
+ create mode 100644 cupbop/js/isotope.min.js
+ create mode 100644 cupbop/js/jquery-3.2.1.min.js
+ create mode 100644 cupbop/js/jquery.mapify.js
+ create mode 100644 cupbop/js/jquery.superslides.min.js
+ create mode 100644 cupbop/js/legacy.js
+ create mode 100644 cupbop/js/picker.date.js
+ create mode 100644 cupbop/js/picker.js
+ create mode 100644 cupbop/js/picker.time.js
+ create mode 100644 cupbop/js/popper.min.js
+ create mode 100644 cupbop/menu.html
+
+JRCCTV@OP19 MINGW64 ~/Desktop/Sprint2 (main)
+$ git push
+remote: Permission to grupo8mintic/Sprint2.git denied to jrenals.
+fatal: unable to access 'https://github.com/grupo8mintic/Sprint2.git/': The requested URL returned error: 403 (eliminar credenciales de windows)
+
+JRCCTV@OP19 MINGW64 ~/Desktop/Sprint2 (main)
+$ git push
+Enumerating objects: 89, done.
+Counting objects: 100% (89/89), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (87/87), done.
+Writing objects: 100% (88/88), 5.63 MiB | 1.27 MiB/s, done.
+Total 88 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/grupo8mintic/Sprint2.git
+   7deba2b..057e029  main -> main
+
+JRCCTV@OP19 MINGW64 ~/Desktop/Sprint2 (main)
+$
