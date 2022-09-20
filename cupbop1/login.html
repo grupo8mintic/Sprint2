@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
+
+<!-- Start Head-->
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -8,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>Live Dinner Restaurant - Responsive HTML5 Template</title>  
+    <title>Login</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -26,201 +28,75 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!--Start Style-->
+    <style>
+		body{
+			background: #ffe259;
+			background: linear-gradient(to right, #ffa751, #ffe259);
+		}
+		.bg{
+			background-image: url(images/relleno.jpg);
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	</style>
+<!--End Style-->
 
 </head>
 
+<!--End Head-->
+
+<!-- Start Body-->
 <body>
-	<!-- Start header -->
-	<header class="top-navbar">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbars-rs-food">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-						<!--li class="nav-item"><a class="nav-link" href="menu.html">Carta</a></li>
-						--li class="nav-item"><a class="nav-link" href="about.html">About</a></!--li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="reservation.html">Reservation</a>
-								<a class="dropdown-item" href="stuff.html">Stuff</a>
-								<a class="dropdown-item" href="gallery.html">Gallery</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="blog.html">blog</a>
-								<a class="dropdown-item" href="blog-details.html">blog Single</a>
-							</div>
-						</li
-						<li-- class="nav-item active"><a class="nav-link" href="contactenos.html">Contact</a></li-->
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- End header -->
 	
-	<!-- Start All Pages 
-	<div class="all-page-title page-breadcrumb">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Contact</h1>
+	
+	
+	<div class="container w-75  mt-5 rounded shadow pb-5">
+		<div class="row align-items-stretch" >
+			<div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded ">
+
+			</div>
+				<!--Logo-->
+			<div class="col bg-white p-5 rounded-end">
+				<div class="text-end text-center">
+					<img src="images/logo.png" width="300">
 				</div>
+				<h2 class="fw-bold text-center py-5" >Bienvenido</h2>
+			
+				<!--Login-->
+			<form action="#">
+				<div class="mb-4">
+					<label for="email" class="form-label">Correo Eletronico</label>
+					<input type="email" class="form-control" name="email">
+				</div>
+				<div class="mb-4">
+					<label for="password" class="form-label">Password</label>
+					<input type="password" class="form-control" name="password">
+				</div>
+				<div class="mb-4 form-check">
+					<input type="checkbox" name="connected" class="form-check-input" id="">
+					<label for="connected" class="form-check-label">Mantenerme conectado</label>
+				</div>
+				<!--Buttom-->
+				<div class="d-grid text-center py-3">
+					<button type="submit" class="btn btn-primary btn-lg btn-block"> Iniciar Sesión </button>
+				</div>
+				<!--Register-->
+				<div class="my-3 pb-4 text-center">
+					<span>No tienes cuenta? <a href="registro.html">Registrate Aqui</a></span> <br>
+					<span><a href="/">Recuperar Contraseña</a></span>
+				</div>
+				<!--Back Home-->
+				<div class="fw-bold text-center">
+					<a class="	active" href="index.html"><h2>INICIO</h2></a>
+				</div>	
+			</form>
+
 			</div>
 		</div>
 	</div>
-	End All Pages -->
-	
-	<!-- Start Contact -->
-	<!--div class="map-full"></!--div-->
-	<div class="contact-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="heading-title text-center">
-						<h2>INICIAR SECCION</h2>
-						<p> <b>INICIAR SECCION CUPBOP</b>  </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<form id="formulario_login">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" id="usuario" name="name" placeholder="usuario" required data-error="coloque el usuario">
-									<div class="help-block with-errors"></div>
-								</div>                                 
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" placeholder="contraseña" id="email" class="form-control" name="name" required data-error="coloque su correo">
-									<div class="help-block with-errors"></div>
-								</div> 
-							</div>
-								<div class="submit-button text-center">
-									<button class="btn btn-common" id="login" type="submit">login</button>
-									<button class="btn btn-common" id="reset" type="submit">olvido clave</button>
-									<div id="msgSubmit" class="h3 text-center hidden"></div> 
-									<div class="clearfix"></div> 
-								</div>
-								<div class="control__indicator"></div>
-                                <span class="ml-auto"><a href="registro.html" class="forgot-pass"><u>Registrarse</u></a></span> 
-                                </div>
-							</div>
-						</div>            
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Contact -->
-	
-	<!-- Start Contact info -->
-	<div class="contact-imfo-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 arrow-right">
-					<i class="fa fa-volume-control-phone"></i>
-					<div class="overflow-hidden">
-						<h4>Phone</h4>
-						<p class="lead">
-							+01 123-456-4590
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4 arrow-right">
-					<i class="fa fa-envelope"></i>
-					<div class="overflow-hidden">
-						<h4>Email</h4>
-						<p class="lead">
-							yourmail@gmail.com
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-map-marker"></i>
-					<div class="overflow-hidden">
-						<h4>Location</h4>
-						<p class="lead">
-							800, Lorem Street, US
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Contact info -->
-	
-	<!-- Start Footer -->
-	<footer class="footer-area bg-f">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<h3>About Us</h3>
-					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui.</p>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h3>Subscribe</h3>
-					<div class="subscribe_form">
-						<form class="subscribe_form">
-							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
-							<button type="submit" class="submit">SUBSCRIBE</button>
-							<div class="clearfix"></div>
-						</form>
-					</div>
-					<ul class="list-inline f-social">
-						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h3>Contact information</h3>
-					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-					<p class="lead"><a href="#">+01 2000 800 9999</a></p>
-					<p><a href="#"> info@admin.com</a></p>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<h3>Opening hours</h3>
-					<p><span class="text-color">Monday: </span>Closed</p>
-					<p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
-					<p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
-					<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">Live Dinner Restaurant</a> Design By : 
-					<a href="https://html.design/">html design</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</footer>
-	<!-- End Footer -->
-	
+
 	<a href="#" id="back-to-top" title="Back to top" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
 
 	<!-- ALL JS FILES -->
