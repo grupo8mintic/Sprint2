@@ -1,0 +1,53 @@
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ git config --global user.name "jrenals"
+
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ git config --global user.name "jrenals@uninorte.edu.co"
+
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ git clone https://github.com/grupo8mintic/Sprint2.git
+
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ git clone https://github.com/grupo8mintic/Sprint2.git
+> Cloning into `Sprint2`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+
+JRCCTV@OP19 MINGW64 ~/Desktop
+$ cd Sprint2
+
+JRCCTV@OP19 MINGW64 ~/Desktop/pruebauninorte8 (main)
+$ git add .
+
+JRCCTV@OP19 MINGW64 ~/Desktop/pruebauninorte8 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hola.txt
+
+
+JRCCTV@OP19 MINGW64 ~/Desktop/pruebauninorte8 (main)
+$ git commit -m "version 2.1"
+[main 41d5466] creacion 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hola.txt
+
+JRCCTV@OP19 MINGW64 ~/Desktop/pruebauninorte8 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jrenals/pruebauninorte8.git
+   1e78f4a..41d5466  main -> main
+
+JRCCTV@OP19 MINGW64 ~/Desktop/pruebauninorte8 (main)
+$
+git pull
