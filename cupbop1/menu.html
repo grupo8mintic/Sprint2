@@ -19,7 +19,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">    
-	<!-- Site CSS -->
+		<!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css">    
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -47,9 +47,42 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbars-rs-food">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item "><a class="nav-link" href="index.html">Inicio</a></li>
-					<li class="nav-item active"><a class="nav-link" href="menu.html">Carta</a></li>
-					<li class="nav-item"><a class="nav-link" href="login.html">Iniciar Session</a></li>
+						<li class="nav-item "><a class="nav-link" href="index.html">Inicio</a></li>
+						<li class="nav-item active "><a class="nav-link" href="menu.html">Carta</a></li>
+						<li class="nav-item "><a class="nav-link" href="login.html">Iniciar Session</a></li>
+						<ul class="nav-item nav-link ">
+							<li class="submenu">
+								<img src="images/cart.png" id="img-carrito">
+								<div id="carrito">
+												<table id="lista-carrito" class="u-full-width">
+														<thead>
+																<tr>
+																		<th>Imagen</th>
+																		<th>Nombre</th>
+																		<th>Precio</th>
+																		<th>Cantidad</th>
+																		<th>Total</th>
+																		<th></th>
+																</tr>
+														</thead>
+														<tbody></tbody>
+												</table>
+												<p>Total a pagar</p>
+												<div id="total-pagar"class="total_menu  button u-full-width"></div>
+												<label>
+													<input type="radio" name="servicio" value="yes">
+													Recoger en el local
+												</label>
+												<label>
+													<input type="radio" name="servicio" value="no">
+													Domicilio
+												</label>
+												<a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+												<a class="button u-full-width" href="/cupbop1/login.html">Inicia Sesion</a>
+								</div>
+							</li>
+						</ul>
+					
 				</ul>
 			</div>
 		</div>
@@ -71,7 +104,7 @@
 	
 	<!-- Start Menu -->
 	<!-- inicio de menu de comidas asiatica-->
-	<div class="menu-box">
+	<div class="menu-box" id="menu">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -109,7 +142,7 @@
 										<div class="why-text">
 											<h4>Coca-Cola Sabor Original 1.5 L</h4>
 											<p>Gaseosas</p>
-											<h5> $6.000</h5>
+											<a href="#" class="u-full-width button-primary button input" data-id="1">$<span class="agregar-carrito span-precio">6000</span></a>
 										</div>
 									</div>
 								</div>
@@ -120,7 +153,7 @@
 										<div class="why-text">
 											<h4>Hit Tropical 500 ml</h4>
 											<p>Jugos</p>
-											<h5> $4.000</h5>
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">$<span class="agregar-carrito span-precio">4000</span></a>
 										</div>
 									</div>
 								</div>
@@ -131,7 +164,7 @@
 										<div class="why-text">
 											<h4>Corona 210 ml</h4>
 											<p>Cervezas</p>
-											<h5> $5.000</h5>
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">$<span class="agregar-carrito span-precio">5000</span></a>
 										</div>
 									</div>
 								</div>
@@ -143,7 +176,7 @@
 											<h4>Chop Suey Ichiraku Personal</h4>
 											<p>Verduras salteadas de zanahoria, cebolla, brócoli, pimentón, repollo con
 												pollo, cerdo, jamón y camarón.</p>
-											<h5> $18.000</h5>
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">$<span class="agregar-carrito span-precio">18000</span></a>
 										</div>
 									</div>
 								</div>
@@ -153,9 +186,10 @@
 										<img src="images/img-05.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Ramen Ichiraku Personal</h4>
-											<p>Caldo, huevo, espinaca, alga nori, pastas, champiñones, narutomaki,
-												zanahoria, ajonjoli. (la proteina es cerdo).</p>
-											<h5> $18.500</h5>
+											<p>
+												Caldo, huevo, espinaca, alga nori, pastas y diferentes especias(la proteina es cerdo).
+											</p>
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">$<span class="agregar-carrito span-precio">18500</span></a>
 										</div>
 									</div>
 								</div>
@@ -166,7 +200,8 @@
 										<div class="why-text">
 											<h4>Beef Teriyaki</h4>
 											<p>Lomo de res en salsa TERIYAKI acompañado de vegetales y arroz Yakimeshi</p>
-											<h5> $37.500</h5>
+										
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">$<span class="agregar-carrito span-precio">37500</span></a>
 										</div>
 									</div>
 								</div>
@@ -175,10 +210,10 @@
 									<div class="gallery-single fix">
 										<img src="images/img-07.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Pastas Low Mein Ichiraku Grande</h4>
-											<p>Pastas guisadas con pollo, cerdo, jamon y camaron. (ideal para 4 personas).
+											<h4>Pastas Low Mein Ichiraku</h4>
+											<p>Pastas guisadas con pollo, cerdo, jamon y camaron.(ideal para 4 personas).
 											</p>
-											<h5> $29.000</h5>
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">$<span class="agregar-carrito span-precio">29000</span></a>
 										</div>
 									</div>
 								</div>
@@ -189,7 +224,8 @@
 										<div class="why-text">
 											<h4>Singapur Fajitas</h4>
 											<p>Rellenas de lomo al estilo tataki, mango, tomate seco y pasta Vermicelli</p>
-											<h5> $20.500</h5>
+										
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">$<span class="agregar-carrito span-precio">20500</span></a>
 										</div>
 									</div>
 								</div>
@@ -200,7 +236,8 @@
 										<div class="why-text">
 											<h4>Nigiri Sushi</h4>
 											<p>Filetitos de pescado sobre bolitas de arroz</p>
-											<h5> $24.900</h5>
+										
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">$<span class="agregar-carrito span-precio">24900</span></a>
 										</div>
 									</div>
 								</div>
@@ -215,7 +252,8 @@
 										<div class="why-text">
 											<h4>Coca-Cola Sabor Original 1.5 L</h4>
 											<p>Gaseosas</p>
-											<h5> $6.000</h5>
+											
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">$<span class="agregar-carrito span-precio">6000</span></a>
 										</div>
 									</div> 
 								</div><!--CARD BEBIDA 1 FIN-->
@@ -226,7 +264,8 @@
 										<div class="why-text">
 											<h4>Hit Tropical 500 ml</h4>
 											<p>Jugos</p>
-											<h5> $4.000</h5>
+											
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">$<span class="agregar-carrito span-precio">4000</span></a>
 										</div>
 									</div>
 								</div><!--CARD BEBIDA 2 FIN-->
@@ -237,7 +276,8 @@
 										<div class="why-text">
 											<h4>Corona 210 ml</h4>
 											<p>Cervezas</p>
-											<h5> $5.000</h5>
+											
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">$<span class="agregar-carrito span-precio">5000</span></a>
 										</div>
 									</div>
 								</div><!--CARD BEBIDA 2 FIN-->
@@ -254,7 +294,8 @@
 										<div class="why-text">
 											<h4>Chop Suey Ichiraku Personal</h4>
 											<p>Verduras salteadas de zanahoria, cebolla, brócoli, pimentón, repollo con pollo, cerdo, jamón y camarón.</p>
-											<h5> $18.000</h5>
+											
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">$<span class="agregar-carrito span-precio">18000</span></a>
 										</div>
 									</div>
 								</div>
@@ -264,8 +305,9 @@
 										<img src="images/img-05.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Ramen Ichiraku Personal</h4>
-											<p>Caldo, huevo, espinaca, alga nori, pastas, champiñones, narutomaki, zanahoria, ajonjoli. (la proteina es cerdo).</p>
-											<h5> $18.500</h5>
+											<p>Caldo, huevo, espinaca, alga nori, pastas y diferentes especias(la proteina es cerdo).</p>
+											
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">$<span class="agregar-carrito span-precio">18500</span></a>
 										</div>
 									</div>
 								</div>
@@ -276,7 +318,8 @@
 										<div class="why-text">
 											<h4>Beef Teriyaki</h4>
 											<p>Lomo de res en salsa TERIYAKI acompañado de vegetales y arroz Yakimeshi</p>
-											<h5> $37.500</h5>
+											
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">$<span class="agregar-carrito span-precio">37500</span></a>
 										</div>
 									</div>
 								</div>
@@ -290,31 +333,31 @@
 									<div class="gallery-single fix">
 										<img src="images/img-07.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
-											<h4>Pastas Low Mein Ichiraku Grande</h4>
+											<h4>Pastas Low Mein Ichiraku</h4>
 											<p>Pastas guisadas con pollo, cerdo, jamon y camaron. (ideal para 4 personas).</p>
-											<h5> $29.000</h5>
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">$<span class="agregar-carrito span-precio">29000</span></a>
 										</div>
 									</div>
 								</div>
-								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
 										<img src="images/img-08.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Singapur Fajitas</h4>
 											<p>Rellenas de lomo al estilo tataki, mango, tomate seco y pasta Vermicelli</p>
-											<h5> $20.500</h5>
+											
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">$<span class="agregar-carrito span-precio">20500</span></a>
 										</div>
 									</div>
 								</div>
-								
 								<div class="col-lg-4 col-md-6 special-grid dinner">
 									<div class="gallery-single fix">
 										<img src="images/img-09.jpg" class="img-fluid" alt="Image">
 										<div class="why-text">
 											<h4>Nigiri Sushi</h4>
 											<p>Filetitos de pescado sobre bolitas de arroz</p>
-											<h5> $24.900</h5>
+											<a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">$<span class="agregar-carrito span-precio">24900</span></a>
+											
 										</div>
 									</div>
 								</div>
@@ -507,6 +550,7 @@
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
     <!-- ALL PLUGINS -->
 	<script src="js/jquery.superslides.min.js"></script>
 	<script src="js/images-loded.min.js"></script>
