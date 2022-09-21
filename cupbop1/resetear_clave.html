@@ -27,15 +27,18 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-
+     
 <!--Start Style-->
+ <!-- Font special for pages-->
+ <link href="https://fonts.googleapis.com/css?family=Roboto:500,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
     <style>
 		body{
-			background: #ffe259;
-			background: linear-gradient(to right, #ffa751, #ffe259);
+			background: #ffc559;
+			background: linear-gradient(to right, hsl(30, 95%, 63%), hwb(51 34% 0%));
 		}
 		.bg{
-			background-image: url(images/relleno.jpg);
+			background-image: url(images/slider-03.jpg);
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -51,7 +54,8 @@
 <body>
 	
 	
-	
+
+
 	<div class="container w-75  mt-5 rounded shadow pb-5">
 		<div class="row align-items-stretch" >
 			<div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded ">
@@ -60,37 +64,31 @@
 				<!--Logo-->
 			<div class="col bg-white p-5 rounded-end">
 				<div class="text-end text-center">
-					<img src="images/logo.png" width="300">
+					<img src="images/logo.png"  class="rounded" width="300">
 				</div>
-				<h2 class="fw-bold text-center py-5" >Bienvenido</h2>
+				<h2 class="fw-bold text-center py-5" >Cambiar Contraseña</h2>
 			
-				<!--Login-->
-			<form action="#">
+				<!--olvido clave-->
+			<form action="#" >
 				<div class="mb-4">
-					<label for="email" class="form-label">Correo Eletronico</label>
-					<input type="email" class="form-control" name="email">
+					<label for="email" class="form-label" >Correo Eletronico</label>
+					<input type="email" class="form-control" name="email" placeholder="ingresesucorreo@">
 				</div>
 				<div class="mb-4">
-					<label for="password" class="form-label">Password</label>
-					<input type="password" class="form-control" name="password">
-				</div>
-				<div class="mb-4 form-check">
-					<input type="checkbox" name="connected" class="form-check-input" id="">
-					<label for="connected" class="form-check-label">Mantenerme conectado</label>
+					<label for="email" class="form-label" >Confirmar Correo </label>
+					<input type="email" class="form-control" name="emailconfirmar" placeholder="confirmarsucorreo@">
 				</div>
 				<!--Buttom-->
-				<div class="d-grid text-center py-3">
-					<button type="submit" class="btn btn-primary btn-lg btn-block"> Iniciar Sesión </button>
+				<div class="d-grid text-center py-lg-0">
+					<!--button type="submit" class="btn btn-primary"> Enviar </!--button-->
+					<a class="btn btn-primary" href="index.html" role="button">Enviar</a>
 				</div>
 				<!--Register-->
 				<div class="my-3 pb-4 text-center">
-					<span>No tienes cuenta? <a href="registro.html">Registrate Aqui</a></span> <br>
-					<span><a href="olvido_clave.html">Recuperar Contraseña</a></span>
+					<span><a class="d-flex" onclik="" href="index.html"><h3>Regresar</h3></a></span> <br>
+				
 				</div>
-				<!--Back Home-->
-				<div class="fw-bold text-center">
-					<a class="	active" href="index.html"><h2>INICIO</h2></a>
-				</div>	
+				
 			</form>
 
 			</div>
